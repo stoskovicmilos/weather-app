@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="app">
+    <header>
+        <h1>🌤️ Weather App</h1>
+        <p>Check the current weather anywhere</p>
+    </header>
+
+    <div class="search">
+        <input type="text" id="cityInput" placeholder="Enter city name...">
+        <button id="searchBtn">Search</button>
+    </div>
+
+    <div id="weatherInfo" class="weather-info hidden">
+        <h2 id="cityName"></h2>
+        <p id="description"></p>
+        <p>Temperature: <span id="temp"></span>°C</p>
+        <p>Humidity: <span id="humidity"></span>%</p>
+        <p>Wind Speed: <span id="wind"></span> m/s</p>
+    </div>
+
+    <div id="errorMsg" class="error hidden">City not found. Try again!</div>
+</div>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
